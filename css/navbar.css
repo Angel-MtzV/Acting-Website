@@ -77,3 +77,7 @@ img{
 img:hover{
     cursor: default;
 }
+
+.navbar a#active {
+    color: white;
+}
