@@ -1,7 +1,9 @@
 /* Color Themes */
 
 :root {
-    --background-color: #212121;
-    --body-text-color: #FFFFFF;
+    --background-color: #250b0b;
+    --nav-background-color: #212121;
+    --body-text-color: white;
 
 }
+/* #a5a5a5 */
