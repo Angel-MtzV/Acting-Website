@@ -1,0 +1,18 @@
+@import url(color-themes.css);
+
+.navbar {
+    background-color: var(--background-color);
+    color: var(--body-text-color);
+
+    position: absolute;
+    width: 1440px;
+    height: 165.02px;
+    left: 0px;
+    top: 0px;
+
+}
+
+.navbar.font{
+    position: absolute;
+    
+}

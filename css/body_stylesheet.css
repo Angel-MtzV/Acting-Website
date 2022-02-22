@@ -1,0 +1,12 @@
+@import url(color-themes.css);
+
+/* body Stykesheet */
+ body {
+    background: var(--background-color);
+ }
+
+ .body-grid-container{
+    position: relative;
+    width: auto;
+    height: auto;
+ }
