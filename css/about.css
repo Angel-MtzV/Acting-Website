@@ -1,0 +1,37 @@
+@import url(color-themes.css);
+
+.about-grid-container {
+    display: grid; 
+    grid-template-columns: 10em 1fr 0.5fr 1fr 10em; 
+    grid-template-rows: 15em 1fr; 
+    gap: 3em 1em; 
+    grid-template-areas: 
+    ". About-Title . Photo ."
+    ". About-Content About-Content Photo ."; 
+}
+.About-Title { grid-area: About-Title; }
+.About-Content { grid-area: About-Content; }
+.Photo { grid-area: Photo; }
+
+.About-Title {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4em;
+    padding: 0;
+    border: 5px solid white;
+}
+
+.Photo{
+    border: 1px solid white;
+}
+
+.Photo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.About{
+    margin: auto;
+    width: 100%;
+}

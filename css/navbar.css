@@ -12,7 +12,7 @@ div.navbar {
 .navbar-grid-container {  
     margin: 0;
     display: grid;
-    grid-template-columns: 2em 0.1fr 4fr 0.2fr 2em 0.2fr 2em 0.1fr 2em 0.2fr 2em 0.16fr 4em;
+    grid-template-columns: 1em 0.1fr 4fr 0.2fr 2em 0.2fr 2em 0.1fr 2em 0.2fr 2em 0.16fr 1em;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -78,6 +78,7 @@ img:hover{
     cursor: default;
 }
 
-.navbar a#active {
+.navbar div#active {
     color: white;
 }
+
