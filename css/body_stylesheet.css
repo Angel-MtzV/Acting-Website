@@ -44,12 +44,10 @@ body {
 .container {
    display: grid; 
    grid-template-columns: 1fr; 
-   grid-template-rows: 1fr 0.5em; 
+   grid-template-rows: 1fr; 
    gap: 0px 0px; 
    grid-template-areas: 
-     "body" 
-     "foot"
- }
+      "body" 
+}
 
  .body { grid-area: body; }
- .foot { grid-area: foot; background-color: var(--background-color);}
