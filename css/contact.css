@@ -1,0 +1,47 @@
+.Contacting{
+    margin: auto;
+}
+
+
+.fcf-input-group, select, textarea {
+    display: block;
+    border-radius: 0px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+#fcf-button {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+input {
+    color: white;
+    background-color:black;
+    border: 1px solid black;
+    font-size: 1.3em;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+textarea {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    font-size: 1.7em;
+    width: 108%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+#fcf-button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}

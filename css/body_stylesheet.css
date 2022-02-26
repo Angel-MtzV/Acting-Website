@@ -23,7 +23,7 @@ body {
 
    display: grid; 
    grid-template-columns: 10em 1fr 10em; 
-   grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr; 
+   grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr 3em; 
    gap: 3em 0px; 
    grid-template-areas: 
       "navbar navbar navbar"
@@ -31,7 +31,8 @@ body {
       ". About ."
       ". Resume ."
       ". Reels ."
-      ". Contacting ."; 
+      "Contacting Contacting Contacting"
+      "footer footer footer"; 
 }
 
 .navbar { grid-area: navbar; }
@@ -40,6 +41,10 @@ body {
 .Resume { grid-area: Resume; }
 .Reels { grid-area: Reels; }
 .Contacting { grid-area: Contacting; }
+.footer {
+   grid-area: footer;
+   background-color: var(--background-color);
+}
 
 .container {
    display: grid; 
