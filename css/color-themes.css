@@ -1,9 +1,14 @@
 /* Color Themes */
 
 :root {
-    --background-color: #250b0b;
     /* --background-color: #212121; */
-    --nav-background-color: #212121;
+
+    /* --background-color: #250b0b;
+    --nav-background-color: #212121; */
+
+    --background-color: #000834;
+    --nav-background-color: #000834;
+
     --body-text-color: white;
 
 }

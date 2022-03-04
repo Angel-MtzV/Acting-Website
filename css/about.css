@@ -20,15 +20,18 @@
     border: 5px solid white;
 }
 
-.Photo{
+/* .Photo{
     border: 1px solid white;
-}
+} */
 
 .Photo img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 1px solid white;
 }
 
 .About{

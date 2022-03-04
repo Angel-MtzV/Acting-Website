@@ -2,6 +2,9 @@
     margin: auto;
 }
 
+.contact-title{
+    text-decoration: underline;
+}
 
 .fcf-input-group, select, textarea {
     display: block;

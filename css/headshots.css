@@ -13,7 +13,7 @@
       "Head1 Head2 Head3"
 }
 
-.H1 {grid-area: Head1; border: 1px solid white;}
+.H1 {grid-area: Head1;}
 .H2 {grid-area: Head2; border: 1px solid white;}
 .H3 {grid-area: Head3; border: 1px solid white;}
 
@@ -22,4 +22,6 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    height: auto;
+    border: 1px solid white;
 }
