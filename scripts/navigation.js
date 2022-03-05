@@ -1,10 +1,17 @@
+const Home = document.getElementById('home');
 
 const home = document.getElementById('Home');
 const bio = document.getElementById('Bio');
 const resume = document.getElementById('Resume');
 const reel = document.getElementById('Reel');
 const contact = document.getElementById('Contact');
-const ig = document.getElementById('Ig')
+const ig = document.getElementById('Ig');
+
+const Headshot = document.getElementById('headshot');
+const Bio = document.getElementById('about');
+const Resume = document.getElementById('resume');
+const Reel = document.getElementById('reels');
+const Contact = document.getElementById('contact');
 
 function clearActive(){
     home.className = "nav";
@@ -17,6 +24,14 @@ function clearActive(){
 home.onclick = function activate() {
     clearActive();
     home.className = "active nav";
+
+    Home.className = "body home-body-grid-container";
+
+    Headshot.style.display = "";
+    Bio.style.display = "";
+    Resume.style.display = "";
+    Contact.style.display = "";
+    Reel.style.display = "";
 }
 
 bio.onclick = function activate() {
@@ -37,6 +52,13 @@ reel.onclick = function activate() {
 contact.onclick = function activate() {
     clearActive();
     contact.className = "active nav";
+
+    Home.className = "body contact-body-grid-container";
+
+    Headshot.style.display = "none";
+    Bio.style.display = "none";
+    Resume.style.display = "none";
+    Reel.style.display = "none";
 }
 
 ig.onclick = function Instagram() {

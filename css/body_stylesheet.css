@@ -1,6 +1,6 @@
 @import url(color-themes.css);
 
-/* body Stykesheet */
+/* body Stylesheet */
 body {
    background: white;
    margin: 0;
@@ -12,10 +12,23 @@ body {
    color: var(--body-text-color);
 }
 
+/* body container */
+.container {
+   display: grid; 
+   grid-template-columns: 1fr; 
+   grid-template-rows: 1fr; 
+   gap: 0px 0px; 
+   grid-template-areas: 
+      "body" 
+}
+
+ .body { grid-area: body; }
+
 .body{
    background: var(--background-color);
 }
 
+/* Home grid container */
 .home-body-grid-container{
    position: relative;
    width: auto;
@@ -36,6 +49,34 @@ body {
       "footer footer footer"; 
 }
 
+/* .navbar { grid-area: navbar; }
+.Headshots { grid-area: Headshots; }
+.About { grid-area: About; }
+.Resume { grid-area: Resume; }
+.Reels { grid-area: Reels; }
+.Contacting { grid-area: Contacting; }
+.footer {
+   grid-area: footer;
+   background-color: var(--background-color);
+} */
+
+/* Contact grid container */
+.contact-body-grid-container{
+   position: relative;
+   width: auto;
+   height: auto;
+
+   display: grid; 
+   /* grid-template-columns: 1fr;  */
+   grid-template-rows: 0fr 2em 1fr 6em; 
+   gap: 3em 0px; 
+   grid-template-areas: 
+      "navbar"
+      "."
+      "Contacting"
+      "footer"; 
+}
+
 .navbar { grid-area: navbar; }
 .Headshots { grid-area: Headshots; }
 .About { grid-area: About; }
@@ -46,14 +87,3 @@ body {
    grid-area: footer;
    background-color: var(--background-color);
 }
-
-.container {
-   display: grid; 
-   grid-template-columns: 1fr; 
-   grid-template-rows: 1fr; 
-   gap: 0px 0px; 
-   grid-template-areas: 
-      "body" 
-}
-
- .body { grid-area: body; }
