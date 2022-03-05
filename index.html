@@ -19,8 +19,8 @@
 
     <!-- Body -->
     <!-- class = "body-grid-container" -->
-    <body id = "Home" class="container">
-        <div class="body body-grid-container">
+    <body class="container">
+        <div id = "home" class="body home-body-grid-container">
             <div class="navbar navbar-grid-container" >
                 <div class="Logo">
                     <img 
@@ -31,16 +31,18 @@
 
                 <div class="Title font1"> <p class="def">Angel Martinez</p> </div>
 
-                <div id="active" class="Home font2"> <p class="nav">Home</p></div>
+                <div class="Home font2"> <p id="Home" class="active nav">Home</p></div>
 
-                <div class="Bio font2"><p class="nav">Resume/Bio</p></div>
+                <div class="Bio font2"><p id="Bio" class="nav">Bio</p></div>
 
-                <div class="Reel font2"><p class="nav">Reel</p></div>
+                <div class="resume font2"><p id="Resume" class="nav">Resume</p></div>
 
-                <div class="Contact font2"><p class="nav">Contact</p></div>
+                <div class="Reel font2"><p id="Reel" class="nav">Reel</p></div>
+
+                <div class="Contact font2"><p id="Contact" class="nav">Contact</p></div>
 
                 <div class="Social-Media font3">
-                    <p class="nav"><i class="fa fa-instagram"></i></p>
+                    <p class="nav"><i id="Ig" class="fa fa-instagram"></i></p>
                 </div>
             </div>
 
@@ -53,17 +55,17 @@
                 <div class="H3"> Hskjbdjaknksda <img src="" alt=""> </div>
             </div>
 
-            <div class="About about-grid-container">
+            <div id="about" class="About about-grid-container">
                 <div class="About-Title"> <p> ABOUT ANGEL </p></div>
                 <div class="About-Content">AHsjkhJSKDajk</div>
                 <div class="Photo"> <img id="about" src="Files/Images/Headshot About.jpg"></div>
             </div>
 
-            <div class="Resume">Resume</div>
+            <div id="resume" class="Resume">Resume</div>
 
-            <div class="Reels">Reel</div>
+            <div id="reels" class="Reels">Reel</div>
 
-            <div class="Contacting">
+            <div id="contacting" class="Contacting">
                 <h1 class="contact-title">CONTACT</h1>
                 <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
                 
@@ -79,7 +81,10 @@
                 </div>
             </div>
 
-            <div class="footer"></div>
+            <!-- <div class="footer"></div> -->
         </div>
+        <div class="footer"></div>
+        <!-- Main Script -->
+        <script src="./scripts/navigation.js" type="module"></script>
     </body>
 </html>

@@ -16,7 +16,7 @@ body {
    background: var(--background-color);
 }
 
-.body-grid-container{
+.home-body-grid-container{
    position: relative;
    width: auto;
    height: auto;
