@@ -1,16 +1,28 @@
 @import url(color-themes.css);
 
-.about-grid-container {
+.home-about-grid-container {
     display: grid; 
-    grid-template-columns: 3em 1fr 1fr 1.2fr 3em; 
+    grid-template-columns: 3em 1fr 9em 6em 1.2fr 3em; 
     grid-template-rows: 15em 1fr; 
     gap: 3em 1em; 
     grid-template-areas: 
-    ". About-Title . Photo ."
-    ". About-Content About-Content Photo ."; 
+    ". About-Title . . Photo ."
+    ". About-Content About-Content . Photo ."; 
+}
+
+.about-grid-container {
+    display: grid; 
+    grid-template-columns: 13em 1fr 8em 8em 1.2fr 13em; 
+    grid-template-rows: 15em 1fr; 
+    gap: 3em 1em; 
+    grid-template-areas: 
+    ". About-Title . Content1 Content1 ."
+    ". Content2 Content2 . Photo ."; 
 }
 .About-Title { grid-area: About-Title; }
 .About-Content { grid-area: About-Content; }
+.Content1 { grid-area: Content1; }
+.Content2 { grid-area: Content2; }
 .Photo { grid-area: Photo; }
 
 .About-Title {
@@ -19,10 +31,6 @@
     padding-left: 0.2em;
     border: 5px solid white;
 }
-
-/* .Photo{
-    border: 1px solid white;
-} */
 
 .Photo img {
     display: block;
@@ -37,4 +45,34 @@
 .About{
     margin: auto;
     width: 100%;
+}
+
+.font-about-home{
+    color: white;
+    font-size: 1.4em;
+}
+
+#about-more{
+    border: 1px solid white;
+    background-color: black;
+}
+
+#about-more:hover{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.font-about{
+    color: white;
+    font-size: 1.4em;
+}
+
+#about-content1{
+    display: none;
+}
+
+#about-content2{
+    display: none;
 }

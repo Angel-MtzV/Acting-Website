@@ -60,6 +60,23 @@ body {
    background-color: var(--background-color);
 } */
 
+/* Bio grid container */
+.bio-body-grid-container{
+   position: relative;
+   width: auto;
+   height: auto;
+
+   display: grid; 
+   /* grid-template-columns: 1fr;  */
+   grid-template-rows: 0fr 2em 1fr 6em; 
+   gap: 3em 0px; 
+   grid-template-areas: 
+      "navbar"
+      "."
+      "About"
+      "footer"; 
+}
+
 /* Contact grid container */
 .contact-body-grid-container{
    position: relative;
