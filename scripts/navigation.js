@@ -51,6 +51,9 @@ home.onclick = function activate() {
 
     homeActive();
     bioHomeActive();
+
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
 }
 
 bio.onclick = function activate() {
