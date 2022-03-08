@@ -1,6 +1,32 @@
-/* @import url(color-themes.css);
+/* @import url(color-themes.css); */
 
-.footer{
-    background-color: var(--background-color);
-    height: 3em;
-} */
+#Footer{
+    height: 5em;
+}
+
+.footer-center-grid-container {  
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". copyright .";
+  }
+
+  .footer-left-grid-container {  
+    margin: 0;
+    display: grid;
+    grid-template-columns: 13em 1fr 6em;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". copyright .";
+  }
+
+  .copyright{
+      grid-area: copyright;
+      color: #a5a5a5;
+    }

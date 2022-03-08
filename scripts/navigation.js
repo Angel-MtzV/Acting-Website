@@ -13,6 +13,7 @@ const Bio = document.getElementById('about');
 const Resume = document.getElementById('resume');
 const Reel = document.getElementById('reels');
 const Contact = document.getElementById('contacting');
+const Footer = document.getElementById('Footer');
 
 const BioHome = document.getElementById('about-home');
 const BioBtn = document.getElementById('about-more');
@@ -47,7 +48,8 @@ home.onclick = function activate() {
     home.className = "active nav";
 
     Home.className = "body home-body-grid-container";
-    Bio.className = "About home-about-grid-container"
+    Bio.className = "About home-about-grid-container";
+    Footer.className = "footer footer-left-grid-container";
 
     homeActive();
     bioHomeActive();
@@ -62,6 +64,7 @@ bio.onclick = function activate() {
 
     Home.className = "body bio-body-grid-container";
     Bio.className = "About about-grid-container";
+    Footer.className = "footer footer-left-grid-container";
 
     homeActive();
 
@@ -74,16 +77,39 @@ bio.onclick = function activate() {
     Resume.style.display = "none";
     Reel.style.display = "none";
     Contact.style.display = "none";
+
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
 }
 
 resume.onclick = function activate() {
     clearActive();
     resume.className = "active nav";
+
+    homeActive();
+
+    Headshot.style.display = "none";
+    Bio.style.display = "none";
+    Reel.style.display = "none";
+    Contact.style.display = "none";
+
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
 }
 
 reel.onclick = function activate() {
     clearActive();
     reel.className = "active nav";
+
+    // homeActive();
+
+    // Headshot.style.display = "none";
+    // Bio.style.display = "none";
+    // Resume.style.display = "none";
+    // Contact.style.display = "none";
+
+    // document.documentElement.scrollTop = 0;
+    // document.body.scrollTop = 0;
 }
 
 contact.onclick = function activate() {
@@ -91,6 +117,7 @@ contact.onclick = function activate() {
     contact.className = "active nav";
 
     Home.className = "body contact-body-grid-container";
+    Footer.className = "footer footer-center-grid-container";
 
     homeActive();
 
@@ -122,4 +149,7 @@ BioBtn.onclick = function activate() {
     Resume.style.display = "none";
     Reel.style.display = "none";
     Contact.style.display = "none";
+
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
 }
