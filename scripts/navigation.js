@@ -1,5 +1,6 @@
 
 const Home = document.getElementById('body');
+const title = document.getElementById('title');
 
 const home = document.getElementById('Home');
 const bio = document.getElementById('Bio');
@@ -61,6 +62,7 @@ home.onclick = function activate() {
     Resume.className = "Resume resume1-grid-container";
     Reel.className = "Reels reel-home-grid-container";
     Footer.className = "footer footer-left-grid-container";
+    title.innerHTML = "Home - Angel Martinez";
 
     homeActive();
     bioHomeActive();
@@ -77,6 +79,7 @@ bio.onclick = function activate() {
     Home.className = "body bio-body-grid-container";
     Bio.className = "About about-grid-container";
     Footer.className = "footer footer-left-grid-container";
+    title.innerHTML = "Bio - Angel Martinez";
 
     homeActive();
 
@@ -100,6 +103,7 @@ resume.onclick = function activate() {
 
     Home.className = "body resume-body-grid-container";
     Resume.className = "Resume resume2-grid-container";
+    title.innerHTML = "Resume - Angel Martinez";
 
     homeActive();
 
@@ -121,6 +125,7 @@ reel.onclick = function activate() {
 
     Home.className = "body reel-body-grid-container";
     Reel.className = "Reels reel-grid-container";
+    title.innerHTML = "Reel - Angel Martinez";
 
     homeActive();
 
@@ -139,6 +144,7 @@ contact.onclick = function activate() {
 
     Home.className = "body contact-body-grid-container";
     Footer.className = "footer footer-center-grid-container";
+    title.innerHTML = "Contact - Angel Martinez";
 
     homeActive();
 
@@ -158,6 +164,7 @@ BioBtn.onclick = function activate() {
 
     Home.className = "body bio-body-grid-container";
     Bio.className = "About about-grid-container";
+    title.innerHTML = "Bio - Angel Martinez";
 
     homeActive();
 
