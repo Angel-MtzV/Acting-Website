@@ -1,0 +1,118 @@
+.resume1-grid-container{
+    display: grid; 
+    grid-template-columns: 3em 1fr 3em; 
+    grid-template-rows: 5em 20em 2em; 
+    gap: 1em 1em; 
+    grid-template-areas: 
+    ". Resume-Title ."
+    ". Resume-Partial ."
+    ". Resume-Download ."; 
+}
+
+.resume2-grid-container{
+    display: grid; 
+    grid-template-columns: 13em 1fr 13em; 
+    grid-template-rows: 5em 20em 2em; 
+    gap: 1em 1em; 
+    grid-template-areas: 
+    ". Resume-Title ."
+    ". Resume-Full ."
+    ". Resume-Download ."; 
+}
+
+.resume-title{grid-area: Resume-Title; text-decoration: underline;}
+.partial-resume{grid-area: Resume-Partial;}
+.full-resume{grid-area: Resume-Full;}
+#button-resume{
+    font-size: 1.3em;
+    grid-area: Resume-Download; 
+    width: 15em;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+
+#button-resume:hover{
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.partial-resume-grid-container{
+    display: grid; 
+    grid-template-columns: 1.3fr 1.3fr; 
+    grid-template-rows: 6em 1em 5em 1em 3em; 
+    gap: 0em 4em; 
+    grid-template-areas: 
+    "Film-Title Film1-Info"
+    "Film-Title Film1-Role"
+    "Film-Title Film2-Info"
+    "Film-Title Film2-Role"
+    "Training Training1"; 
+}
+
+.film{grid-area: Film-Title; height: 10em;}
+.film1-info{grid-area: Film1-Info;}
+.film1-role{grid-area: Film1-Role;}
+.film2-info{grid-area: Film2-Info;}
+.film2-role{grid-area: Film2-Role;}
+.training{grid-area: Training;}
+.training1{grid-area: Training1;}
+
+.full-resume-grid-container{
+    display: grid; 
+    grid-template-columns: 1.3fr 1.3fr; 
+    grid-template-rows: 6em 1em 5em 1em 3em; 
+    gap: 0em 4em; 
+    grid-template-areas: 
+    "F-Film-Title F-Film1-Info"
+    "F-Film-Title F-Film1-Role"
+    ". F-Film2-Info"
+    ". F-Film2-Role"
+    "F-Training F-Training1"; 
+}
+
+.f-film{grid-area: F-Film-Title;}
+.f-film1-info{grid-area: F-Film1-Info;}
+.f-film1-role{grid-area: F-Film1-Role;}
+.f-film2-info{grid-area: F-Film2-Info;}
+.f-film2-role{grid-area: F-Film2-Role;}
+.f-training{grid-area: F-Training;}
+.f-training1{grid-area: F-Training1;}
+
+.full-resume{
+    display: none;
+}
+
+.resume-title{
+    font-size: 2em;
+}
+
+.film{
+    font-size: 1.7em;
+    text-decoration: underline;
+}
+
+.training{
+    font-size: 1.7em;
+    text-decoration: underline;
+}
+
+.f-film{
+    font-size: 1.7em;
+    text-decoration: underline;
+}
+
+.f-training{
+    font-size: 1.7em;
+    text-decoration: underline;
+}
+
+.font-film{
+    font-size: 1.3em;
+}
+
+.font-role{
+    color: darkgrey;
+}

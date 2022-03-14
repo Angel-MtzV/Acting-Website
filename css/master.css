@@ -1,7 +1,9 @@
 @import url(color-themes.css);
 @import url(body_stylesheet.css);
-@import url(navbar.css);
 @import url(headshots.css);
+@import url(navbar.css);
 @import url(about.css);
+@import url(resume.css);
+@import url(reel.css);
 @import url(contact.css);
 @import url(footer.css);

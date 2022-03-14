@@ -75,7 +75,8 @@ div.navbar {
 
 img{
     width: 1fr;
-    height: 96px;
+    height: 90px;
+    padding-top: 4px;
     object-fit: contain;
 }
 

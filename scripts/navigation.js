@@ -21,6 +21,10 @@ const BioContent1 = document.getElementById('about-content1');
 const BioContent2 = document.getElementById('about-content2');
 const BioContent3 = document.getElementById('about-content3');
 
+const ResumePartial = document.getElementById("partial-resume");
+const ResumeFull = document.getElementById("full-resume");
+const ResumeBtn = document.getElementById("button-resume");
+
 function clearActive(){
     home.className = "nav";
     bio.className = "nav";
@@ -43,16 +47,23 @@ function bioHomeActive() {
     BioContent2.style.display = "none";
 }
 
+function resumeHomeActive() {
+    ResumePartial.style.display = "grid";
+    ResumeFull.style.display = "none";
+}
+
 home.onclick = function activate() {
     clearActive();
     home.className = "active nav";
 
     Home.className = "body home-body-grid-container";
     Bio.className = "About home-about-grid-container";
+    Resume.className = "Resume resume1-grid-container";
     Footer.className = "footer footer-left-grid-container";
 
     homeActive();
     bioHomeActive();
+    resumeHomeActive();
 
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
@@ -86,7 +97,13 @@ resume.onclick = function activate() {
     clearActive();
     resume.className = "active nav";
 
+    Home.className = "body resume-body-grid-container";
+    Resume.className = "Resume resume2-grid-container";
+
     homeActive();
+
+    ResumePartial.style.display = "none";
+    ResumeFull.style.display = "grid";
 
     Headshot.style.display = "none";
     Bio.style.display = "none";
@@ -152,4 +169,8 @@ BioBtn.onclick = function activate() {
 
     document.documentElement.scrollTop = 0;
     document.body.scrollTop = 0;
+}
+
+ResumeBtn.onclick = function activate() {
+    window.open("https://docs.google.com/document/d/1cOBq6PLwqt3QmOGlYSfV8Hfop2pZV4Qsvuvj-ZfxuFw/edit?usp=sharing", "_blank");
 }
