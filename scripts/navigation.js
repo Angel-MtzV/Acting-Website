@@ -59,6 +59,7 @@ home.onclick = function activate() {
     Home.className = "body home-body-grid-container";
     Bio.className = "About home-about-grid-container";
     Resume.className = "Resume resume1-grid-container";
+    Reel.className = "Reels reel-home-grid-container";
     Footer.className = "footer footer-left-grid-container";
 
     homeActive();
@@ -118,15 +119,18 @@ reel.onclick = function activate() {
     clearActive();
     reel.className = "active nav";
 
-    // homeActive();
+    Home.className = "body reel-body-grid-container";
+    Reel.className = "Reels reel-grid-container";
 
-    // Headshot.style.display = "none";
-    // Bio.style.display = "none";
-    // Resume.style.display = "none";
-    // Contact.style.display = "none";
+    homeActive();
 
-    // document.documentElement.scrollTop = 0;
-    // document.body.scrollTop = 0;
+    Headshot.style.display = "none";
+    Bio.style.display = "none";
+    Resume.style.display = "none";
+    Contact.style.display = "none";
+
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
 }
 
 contact.onclick = function activate() {

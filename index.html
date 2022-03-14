@@ -113,11 +113,25 @@
                 
             </div>
 
-            <div id="reels" class="Reels reel-grid-container">
-                <h1 class="reel-title">REELS</h1>
+            <div id="reels" class="Reels reel-home-grid-container">
+                <div class="reel-title"> <h1> REELS </h1></div>
                 <!-- voice Acting Reel -->
+                <div class="vo-title"><p>Voice Over Reel</p></div>
+                <div class="vo">
+                    <video id="vo-reel" width="350" height="200">
+                        <source src="Files/Videos/VO Reel.mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
                 <!-- Film Reel -->
+                <div class="theatrical-title"><p>Theatrical Reel</p></div>
+                <div class="theatrical">
+                    <video id="t-reel" width="350" height="200">
+                        <source src="Files/Videos/Acting Reel.mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
 
             </div>
 
@@ -144,5 +158,6 @@
         <!-- <div class="footer"></div> -->
         <!-- Main Script -->
         <script src="./scripts/navigation.js" type="module"></script>
+        <script src="./scripts/video.js" type="module"></script>
     </body>
 </html>

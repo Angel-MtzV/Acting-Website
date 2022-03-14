@@ -1,0 +1,57 @@
+.reel-home-grid-container{
+    display: grid; 
+    grid-template-columns: 3em 1fr 1fr 1fr 3em; 
+    grid-template-rows: 5em 5em 20em; 
+    gap: 1em 1em; 
+    grid-template-areas: 
+    ". Reel-Title . . ."
+    ". VO-Title . Theatrical-Title . "
+    ". VO . Theatrical .";
+}
+
+.reel-grid-container{
+    display: grid; 
+    grid-template-columns: 13em 1fr 5em 1fr 3em; 
+    grid-template-rows: 5em 5em 20em; 
+    gap: 1em 1em; 
+    grid-template-areas: 
+    ". Reel-Title . . ."
+    ". VO-Title . Theatrical-Title . "
+    ". VO . Theatrical .";
+}
+
+.reel-title{grid-area: Reel-Title;}
+.vo-title{grid-area: VO-Title;}
+.theatrical-title{grid-area: Theatrical-Title;}
+.vo{grid-area: VO;}
+.theatrical{grid-area: Theatrical;}
+
+.reel-title h1 {
+    font-size: 2em;
+    text-decoration: underline;
+}
+.vo-title p {
+    font-size: 1.6em;
+}
+
+.theatrical-title p {
+    font-size: 1.6em;
+}
+
+.vo video source{
+    width: 320;
+    height: 240;
+}
+
+.vo video {
+    border: 1px solid white;
+}
+
+.theatrical video source{
+    width: 320;
+    height: 240;
+}
+
+.theatrical video {
+    border: 1px solid white;
+}

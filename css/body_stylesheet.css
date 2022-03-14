@@ -82,6 +82,22 @@ body {
       "footer"; 
 }
 
+/* Reel grid container */
+.reel-body-grid-container{
+   position: relative;
+   width: auto;
+   height: auto;
+
+   display: grid; 
+   /* grid-template-columns: 1fr;  */
+   grid-template-rows: 2.9em 0.7fr 3em; 
+   gap: 3em 0px; 
+   grid-template-areas: 
+      "navbar"
+      "Reels"
+      "footer"; 
+}
+
 /* Contact grid container */
 .contact-body-grid-container{
    position: relative;
