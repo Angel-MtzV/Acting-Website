@@ -176,5 +176,6 @@ BioBtn.onclick = function activate() {
 }
 
 ResumeBtn.onclick = function activate() {
-    window.open("https://docs.google.com/document/d/1cOBq6PLwqt3QmOGlYSfV8Hfop2pZV4Qsvuvj-ZfxuFw/edit?usp=sharing", "_blank");
+    // window.open("https://docs.google.com/document/d/1cOBq6PLwqt3QmOGlYSfV8Hfop2pZV4Qsvuvj-ZfxuFw/edit?usp=sharing", "_blank");
+    window.open("Files/Angel Martinez Acting Resume.pdf", "_blank");
 }
