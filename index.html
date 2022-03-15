@@ -137,18 +137,19 @@
 
             <div id="contacting" class="Contacting">
                 <h1 class="contact-title">CONTACT</h1>
-                <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-                
-                <div class="fcf-form-group">
-                    <div class="fcf-input-group">
-                        <input type="text" id="Name" name="Name" placeholder="Name*" class="fcf-form-control" required>
-                        <input type="subject" id="Subject" name="Subject" placeholder="Subject*" class="fcf-form-control" required>
-                        <textarea id="Message" name="Message" placeholder="Message*" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                <form id="form">
+                    <div class="field">
+                      <input placeholder="Name*" type="text" name="from_name" id="from_name">
                     </div>
-                </div>
-                <div class="fcf-form-group">
-                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Submit</button>
-                </div>
+                    <div class="field">
+                      <input placeholder="Email*" type="text" name="reply_to" id="reply_to">
+                    </div>
+                    <div id="Message" class="field">
+                      <textarea placeholder="Message*" type="text" name="message" id="message"></textarea>
+                    </div>
+                  
+                    <input type="submit" id="button" value="Send Email" >
+                  </form>
             </div>
 
             <div id="Footer" class="footer footer-left-grid-container">
@@ -160,5 +161,40 @@
         <script src="./scripts/navigation.js" type="module"></script>
         <script src="./scripts/video.js" type="module"></script>
         <script src="./scripts/router.js" type="module"></script>
+
+        <!-- Contact Script -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init('TxEtgh7pH8NM9QBqv');
+            })();
+        </script>
+
+        <script type="text/javascript">
+            const btn = document.getElementById('button');
+
+            document.getElementById('form')
+                .addEventListener('submit', function(event) {
+                    event.preventDefault();
+
+                    btn.value = 'Sending...';
+
+                    // const serviceID = 'default_service';
+                    // const templateID = 'template_qylajgh';
+
+                    emailjs.send("service_h0l7bqi","template_qylajgh", this)
+                    .then(() => {
+                        btn.value = 'Send Email';
+                        alert('Sent!');
+
+                        // document.getElementById('from_name').value = "";
+                        // document.getElementById('reply_to').value = "";
+                        // document.getElementById('message').value = "";
+                    }, (err) => {
+                        btn.value = 'Send Email';
+                        alert(JSON.stringify(err));
+                    });
+                });
+        </script>
     </body>
 </html>
