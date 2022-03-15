@@ -1,3 +1,5 @@
+import { router } from './router.js'; // Router imported so you can use it to manipulate your SPA app here
+const setState = router.setState;
 
 const Home = document.getElementById('body');
 const title = document.getElementById('title');
@@ -20,7 +22,6 @@ const BioHome = document.getElementById('about-home');
 const BioBtn = document.getElementById('about-more');
 const BioContent1 = document.getElementById('about-content1');
 const BioContent2 = document.getElementById('about-content2');
-const BioContent3 = document.getElementById('about-content3');
 
 const ResumePartial = document.getElementById("partial-resume");
 const ResumeFull = document.getElementById("full-resume");
@@ -56,6 +57,7 @@ function resumeHomeActive() {
 home.onclick = function activate() {
     clearActive();
     home.className = "active nav";
+    setState("{home}");
 
     Home.className = "body home-body-grid-container";
     Bio.className = "About home-about-grid-container";
@@ -75,6 +77,7 @@ home.onclick = function activate() {
 bio.onclick = function activate() {
     clearActive();
     bio.className = "active nav";
+    setState("{bio}");
 
     Home.className = "body bio-body-grid-container";
     Bio.className = "About about-grid-container";
@@ -100,6 +103,7 @@ bio.onclick = function activate() {
 resume.onclick = function activate() {
     clearActive();
     resume.className = "active nav";
+    setState("{resume}");
 
     Home.className = "body resume-body-grid-container";
     Resume.className = "Resume resume2-grid-container";
@@ -122,6 +126,7 @@ resume.onclick = function activate() {
 reel.onclick = function activate() {
     clearActive();
     reel.className = "active nav";
+    setState("{reel}");
 
     Home.className = "body reel-body-grid-container";
     Reel.className = "Reels reel-grid-container";
@@ -141,6 +146,7 @@ reel.onclick = function activate() {
 contact.onclick = function activate() {
     clearActive();
     contact.className = "active nav";
+    setState("{contact}");
 
     Home.className = "body contact-body-grid-container";
     Footer.className = "footer footer-center-grid-container";
@@ -161,6 +167,7 @@ ig.onclick = function Instagram() {
 BioBtn.onclick = function activate() {
     clearActive();
     bio.className = "active nav";
+    setState("{bio}");
 
     Home.className = "body bio-body-grid-container";
     Bio.className = "About about-grid-container";
