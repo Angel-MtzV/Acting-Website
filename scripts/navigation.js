@@ -119,8 +119,8 @@ resume.onclick = function activate() {
     Reel.style.display = "none";
     Contact.style.display = "none";
 
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
+    document.documentElement.scrollTo(0, 45);
+    document.body.scrollTo(0,45);
 }
 
 reel.onclick = function activate() {
@@ -139,8 +139,8 @@ reel.onclick = function activate() {
     Resume.style.display = "none";
     Contact.style.display = "none";
 
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
+    document.documentElement.scrollTo(0, 40);
+    document.body.scrollTo(0,40);
 }
 
 contact.onclick = function activate() {
@@ -158,6 +158,9 @@ contact.onclick = function activate() {
     Bio.style.display = "none";
     Resume.style.display = "none";
     Reel.style.display = "none";
+
+    document.documentElement.scrollTo(0, 45);
+    document.body.scrollTo(0,45);
 }
 
 ig.onclick = function Instagram() {
